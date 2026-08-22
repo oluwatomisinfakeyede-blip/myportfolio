@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +9,7 @@
     <meta name="description"
           content="Tech Muiby provides professional graphic design, branding, website design, AI creative services and digital solutions.">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=3">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -315,7 +314,7 @@
 
         <div class="portfolio-item" data-category="graphic">
             <div class="project-image">
-                <img src="image/pic editing1.jpg" alt="Tech Muiby graphic advertisement design" class="portfolio-image">
+                <img src="image/pic editing.jpg" alt="Tech Muiby graphic advertisement design" class="portfolio-image">
             </div>
             <div class="project-info">
                 <span>Graphic Design</span>
@@ -352,14 +351,14 @@
         <div class="portfolio-item" data-category="ai">
             <div class="project-image">
                 <video class="portfolio-video" controls preload="metadata">
-                    <source src="video/Ai promotional video-video.mp4" type="video/mp4">
+                    <source src="video/Ai product ads.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
             <div class="project-info">
                 <span>AI Creative</span>
-                <h3>AI Promotional Visual</h3>
-                <p>AI-generated promotional creative.</p>
+                <h3>AI Promotional Video</h3>
+                <p>AI-generated promotional advertisement video.</p>
             </div>
         </div>
 
@@ -376,21 +375,6 @@
         </div>
 
 
-        <div class="portfolio-item" data-category="graphic">
-            <div class="project-image">
-                <video class="portfolio-video" controls preload="metadata">
-                    <source src="video/product asvertisement-video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="project-info">
-                <span>Graphic Design</span>
-                <h3>Product Advertisement</h3>
-                <p>Promotional product advertisement video.</p>
-            </div>
-        </div>
-
-
         <div class="portfolio-item" data-category="app">
             <div class="project-image">
                 <img src="image/App Developer.jpg" alt="Tech Muiby app development interface design" class="portfolio-image">
@@ -399,6 +383,21 @@
                 <span>App Development</span>
                 <h3>App Interface Design</h3>
                 <p>Modern mobile app interface design.</p>
+            </div>
+        </div>
+
+
+        <div class="portfolio-item" data-category="ai">
+            <div class="project-image">
+                <video class="portfolio-video" controls preload="metadata">
+                    <source src="video/product advertisement.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="project-info">
+                <span>AI Creative</span>
+                <h3>Product Advertisement</h3>
+                <p>AI-generated promotional advertisement video.</p>
             </div>
         </div>
 
@@ -607,20 +606,23 @@
         </div>
 
 
-        <form id="contactForm">
+        <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 
             <input type="text"
+                   name="full_name"
                    placeholder="Full Name"
                    required>
 
             <input type="email"
+                   name="email"
                    placeholder="Email Address"
                    required>
 
             <input type="tel"
+                   name="phone"
                    placeholder="Phone Number">
 
-            <select required>
+            <select name="service" required>
                 <option value="">Service Needed</option>
                 <option>Graphic Design</option>
                 <option>Logo & Branding</option>
@@ -632,6 +634,7 @@
             </select>
 
             <textarea
+                name="message"
                 placeholder="Tell me about your project..."
                 rows="6"
                 required></textarea>
@@ -694,8 +697,6 @@
 
 
 <script src="script.js"></script>
-
-
 
 </body>
 </html>
